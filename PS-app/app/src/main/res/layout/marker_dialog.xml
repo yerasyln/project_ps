@@ -1,0 +1,143 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nurlanov.ps_app.BlankFragment">
+
+
+   <TextView
+       android:id="@+id/name_info"
+       android:layout_width="185dp"
+       android:layout_height="30dp"
+       android:text="Название: "
+       android:textSize="20dp"
+       android:layout_marginLeft="20dp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       />
+    <TextView
+       android:id="@+id/name1_info"
+       android:layout_width="185dp"
+       android:layout_height="30dp"
+       android:text="TEXTname"
+       android:textSize="20dp"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       />
+    <TextView
+        android:id="@+id/address_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="Адрес: "
+        android:textSize="20dp"
+        android:layout_marginTop="00dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_info"
+        />
+
+    <TextView
+        android:id="@+id/address1_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="TEXT1adres"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name1_info"
+        />
+    <TextView
+        android:id="@+id/number_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="Номер: "
+        android:textSize="20dp"
+        android:layout_marginTop="00dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address_info"
+        />
+
+    <TextView
+        android:id="@+id/number1_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="TEXTnum"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address1_info"
+        />
+    <TextView
+        android:id="@+id/mesta_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="Места: "
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number_info"
+        />
+
+    <TextView
+        android:id="@+id/mesta1_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="TEXT"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number1_info"
+        />
+    <TextView
+        android:id="@+id/empty_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="Свободен: "
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mesta_info"
+        />
+
+    <TextView
+        android:id="@+id/empty1_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="TEXT"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mesta1_info"
+        />
+    <TextView
+        android:id="@+id/hour_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="Освободится в: "
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/empty_info"
+        />
+
+    <TextView
+        android:id="@+id/hour1_info"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:text="TEXT"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/hour_info"
+        app:layout_constraintTop_toBottomOf="@id/empty1_info"
+        />
+
+    <Button
+        android:id="@+id/okay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ОК"
+
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hour1_info"
+        app:layout_constraintRight_toRightOf="parent"/>
+</android.support.constraint.ConstraintLayout>

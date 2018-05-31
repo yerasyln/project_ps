@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/log_text"
+        android:layout_width="232dp"
+        android:layout_height="46dp"
+        android:text="Авторизация"
+        android:textSize="30sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="60dp"/>
+
+    <EditText
+        android:id="@+id/log_num"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Номер телефона"
+        android:inputType="phone"
+
+        app:layout_constraintTop_toBottomOf="@+id/log_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/log_pass"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/log_num"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Войти"
+        app:layout_constraintTop_toBottomOf="@+id/checkClient"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp" />
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Регистрация"
+        app:layout_constraintTop_toBottomOf="@+id/log_in"
+        app:layout_constraintLeft_toLeftOf="@id/log_in"
+        app:layout_constraintRight_toRightOf="@id/log_in"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Партнер"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_pass" />
+</android.support.constraint.ConstraintLayout>
